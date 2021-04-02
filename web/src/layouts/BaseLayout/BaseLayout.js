@@ -2,7 +2,7 @@ const BaseLayout = ({ children }) => {
   return (
     <>
       <div className="bg-light-gray h-screen w-screen flex items-center justify-center">
-        <div className="relative sm:max-w-sm w-full">
+        <div className="relative sm:max-w-sm md:max-w-md lg:max-w-lg w-full mx-5">
           <main>{children}</main>
         </div>
       </div>
