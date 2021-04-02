@@ -1,7 +1,11 @@
 const BaseLayout = ({ children }) => {
   return (
     <>
-      <main className="bg-green-500">{children}</main>
+      <div className="bg-light-gray h-screen w-screen flex items-center justify-center">
+        <div className="relative sm:max-w-sm w-full">
+          <main>{children}</main>
+        </div>
+      </div>
     </>
   )
 }
