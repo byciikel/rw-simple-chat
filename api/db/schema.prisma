@@ -1,5 +1,5 @@
 datasource DS {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -15,4 +15,13 @@ model UserExample {
   id    Int     @id @default(autoincrement())
   email String  @unique
   name  String?
+}
+
+model User {
+  id             Int      @id @default(autoincrement())
+  email          String   @unique
+  issuer         String
+  public_address String
+  created_at     DateTime
+  updated_at     DateTime
 }
